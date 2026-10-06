@@ -20,11 +20,11 @@
 
 | Inicio / Catálogo General | Filtrado por Categoría |
 | :---: | :---: |
-| ![Home](src/assets/readme/HOME.jpg) | ![Carnes](src/assets/readme/CARNES.jpg) |
+| ![Home](src/assets/readme/HOME.png) | ![Carnes](src/assets/readme/CARNES.png) |
 
 | Proceso de Compra Activa | Carrito Lateral |
 | :---: | :---: |
-| ![Home Compra](src/assets/readme/HOMECOMPRA.jpg) | ![Carrito](src/assets/readme/CARRITO.png) |
+| ![Home Compra](src/assets/readme/HOMECOMPRA.png) | ![Carrito](src/assets/readme/CARRITO.png) |
 
 ---
 

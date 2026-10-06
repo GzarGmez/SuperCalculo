@@ -1,75 +1,67 @@
-# React + TypeScript + Vite
+<p align="center">
+  <img src="LOGO.png" alt="SuperCalculo Logo" width="240" />
+</p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h1 align="center">🛒 SuperCalculo</h1>
 
-Currently, two official plugins are available:
+<p align="center">
+  <b>Una aplicación web interactiva para gestionar tu presupuesto y optimizar tus compras del supermercado en tiempo real.</b>
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 📌 Descripción General
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**SuperCalculo** permite llevar un control preciso del presupuesto en tiempo real, administrar perfiles de usuario, organizar productos por categorías y mantener un historial detallado de compras[cite: 7, 8, 9, 10, 13].
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📸 Vista Previa
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+| Inicio / Catálogo General | Filtrado por Categoría |
+| :---: | :---: |
+| ![Home](HOME.jpg)[cite: 10] | ![Carnes](CARNES.jpg)[cite: 7] |
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+| Proceso de Compra Activa | Carrito Lateral |
+| :---: | :---: |
+| ![Home Compra](HOMECOMPRA.jpg)[cite: 11] | ![Carrito](CARRITO.png)[cite: 8] |
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
 
-```
+## ✨ Características Principales
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+- **👤 Gestión de Perfiles y Presupuesto:** Configura diferentes perfiles de usuario estableciendo un presupuesto máximo en moneda local ($ MXN)[cite: 13].
+- **📊 Indicador Financiero en Tiempo Real:** Visualiza mediante gráficos dinámicos el porcentaje del presupuesto utilizado, el monto total gastado y el saldo restante[cite: 7, 11].
+- **🏷️ Catálogo Organizado por Categorías:** Explora artículos clasificados en Frutas y Verduras, Lácteos y Huevo, Despensa, Carnes, Limpieza, Bebidas y más[cite: 7, 10, 11].
+- **🔍 Búsqueda Rápida:** Encuentra productos al instante con la barra de búsqueda integrada[cite: 7, 10, 11].
+- **➕ Creación de Productos Personalizados:** Añade nuevos artículos al catálogo eligiendo nombre, categoría y asignando íconos/emojis interactivos[cite: 12].
+- **🛒 Control del Carrito:** Selecciona cantidades, unidades (piezas, kg, etc.) y ajusta precios individualmente antes de confirmar tu compra[cite: 6].
+- **📜 Historial de Compras:** Consulta registros anteriores con fechas, horas, desglose completo de productos y montos totales[cite: 9].
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🖼️ Capturas de Pantalla y Flujo de Trabajo
 
-```
+### 1. Gestión de Perfiles
+Crea o selecciona un perfil asignado con un límite de presupuesto.
+![Perfil](PERFIL.png)[cite: 13]
+
+### 2. Personalización e Inventario
+Añade nuevos productos al catálogo con íconos representativos de manera intuitiva.
+![Inventario](INVENTARIO.png)[cite: 12]
+
+### 3. Selección y Modificación de Productos
+Define el precio actual, la cantidad exacta y el tipo de unidad antes de agregar al carrito.
+![Agregar Productos](AGREGARPRODUCTOS.png)[cite: 6]
+
+### 4. Historial de Transacciones
+Revisa las compras finalizadas para llevar un seguimiento histórico de tus gastos.
+![Historial](HISTORIAL.png)[cite: 9]
+
+---
+
+## 🛠️ Tecnologías Utilizadas
+
+- **Frontend:** HTML5, CSS3 / Tailwind CSS, JavaScript (ES6+) / React
+- **Estilos:** Interfaz oscura (Dark Mode), diseño responsivo y moderno
+- **Almacenamiento:** Persistence vía LocalStorage / Base de Datos
